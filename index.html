@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="download.jpeg" alt="Customer Support Ticketing System">
+        </div>
+        <div class="form-container">
+            <div class="form-toggle">
+                <button id="login-btn" class="toggle-btn">Login</button>
+                <button id="signup-btn" class="toggle-btn">Sign Up</button>
+            </div>
+            <div class="role-selection">
+                <div id="user-box" class="role-box active" onclick="selectRole('user')">User</div>
+                <div id="problem-handler-box" class="role-box inactive" onclick="selectRole('problem_handler')">Problem Handler</div>
+            </div>
+            <form id="login-form" class="form">
+                <h2>Login</h2>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="signup-form" class="form hidden">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
